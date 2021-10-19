@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />	
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />	
+  <title>Adobe Aero</title>
+  <!-- <link href="../AeroViewer.css" rel="stylesheet"/> -->
+  <style>
+    
+    .styled {
+        border: 0;
+        line-height: 2.5;
+        padding: 0 20px;
+        font-size: 1rem;
+        text-align: center;
+        color: #fff;
+        text-shadow: 1px 1px 1px #000;
+        border-radius: 10px;
+        background-color: rgb(0, 139, 220);
+        background-image: linear-gradient(to top left,
+                                          rgba(0, 0, 0, .2),
+                                          rgba(0, 0, 0, .2) 30%,
+                                          rgba(0, 0, 0, 0));
+        box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                    inset -2px -2px 3px rgba(0, 0, 0, .6);
+    }
+
+    .styled:hover {
+        background-color: rgba(0, 139, 220, 1);
+    }
+
+    .styled:active {
+        box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                    inset 2px 2px 3px rgba(0, 0, 0, .6);
+    }
+  </style>
+</head>
+<body>
+  <div id="outerdiv"  >
+    <p id="errorMessage">
+      Error message
+    </p>
+    <input id="cancelButton" class="favorite styled" type="button" value="Cancel" onclick="AERO.HandleErrorButton(this.value);">
+    <input id="okButton" class="favorite styled" type="button" value="Ok" onclick="AERO.HandleErrorButton(this.value);"><br>
+
+  </div>
+  </body>
+  </html>
+</div>
+</body>
+</html>
