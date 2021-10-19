@@ -1,0 +1,273 @@
+
+html {
+  background-color: #ffffff;
+  overflow:hidden;
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  touch-action: none;
+  position:fixed;
+}
+body {
+    overflow:hidden;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    background-color: transparent;
+    overflow:hidden;
+    touch-action: none;
+    position:fixed;
+}
+  
+
+#AeroViewer {
+  background-color: transparent;
+  color: #ffffff;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  border: 0px;
+  visibility: visible;
+  touch-action: none;
+  overflow: hidden;
+  position:fixed;
+}
+
+#overlay {
+  background:transparent;
+  background-color: transparent;
+  color: #ffffff;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  border: 0px;
+  overflow: hidden;
+  pointer-events: none;
+  touch-action: none;
+}
+
+#overlayframe {
+  background:transparent;
+  background-color: transparent;
+  color: #ffffff;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  border: 0px;
+  overflow: hidden;
+  /* pointer-events: auto; */
+  touch-action: auto;
+}
+
+#AeroCanvas {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  overflow: hidden;
+  border: 0px;
+  /* pointer-events: none; */
+  touch-action: none;
+}
+
+#AutoScalediv {
+  margin: 0; 
+  background-color: transparent;
+  color: #ffffff;
+  height: 120px;
+  width: 80px;
+  position: absolute;
+  bottom: 50px;
+  right: 120px;
+  border: 0px;
+  margin: 0px;
+  overflow: hidden;
+  pointer-events:none;
+  touch-action: none;
+  z-index: 4;
+}
+
+#ARModediv {
+  margin: 0; 
+  background-color: transparent;
+  color: #ffffff;
+  height: 120px;
+  width: 80px;
+  object-fit: contain;
+  position: absolute;
+  bottom: 50px;
+  right: 20px;
+  border: 0px;
+  margin: 0px;
+  overflow: hidden;
+  pointer-events:none;
+  touch-action: none;
+  z-index: 4;
+}
+#controllerdiv {
+  background-color: transparent;
+  color: #ffffff;
+  height: 110px;
+  width: 110px;
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  border: 0px;
+  margin: 0; 
+  overflow: hidden;
+  touch-action: none;
+  pointer-events:none;
+  z-index: 4;
+}
+      
+/* Panels */
+#fpsdiv {
+  background-color: white;
+  color: #ff0000;
+  font-size: 32px;
+  width: 200px;
+  height: 40px;
+  left: 50px;
+  top: 80px;
+  z-index: 15;
+  border: 0px;
+  visibility: visible;
+  touch-action: none;
+  overflow: hidden;
+  position:absolute;
+}
+
+
+#controllerbutton {
+  background-color: transparent;
+  color: #ffffff;
+  height: 110px;
+  width: 110px;
+  position: absolute;
+  border: 0px;
+  margin: 0; 
+  overflow: hidden;
+  touch-action: none;
+  pointer-events:none;
+  z-index: 4;
+  visibility: hidden;
+}
+
+#ARModebutton {
+  background-color: transparent;
+  color: #ffffff;
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border: 0px;
+  margin: 0; 
+  overflow: hidden;
+  touch-action: none;
+  pointer-events:none;
+  z-index: 4;
+  visibility: hidden;
+  object-fit: contain;
+}
+
+#AutoScalebutton {
+  background-color: transparent;
+  color: #ffffff;
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border: 0px;
+  margin: 0; 
+  overflow: hidden;
+  touch-action: none;
+  pointer-events:none;
+  z-index: 5;
+  visibility: hidden;
+  object-fit: contain;
+}
+
+#loadingdiv {
+  background-color: transparent;
+  color: #000000;
+  position: absolute;
+  border: 0px;
+  margin: 0; 
+  overflow:hidden;
+  touch-action: auto;
+  pointer-events:auto;
+  z-index: 4;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+#loadingframe {
+  background-color: transparent;
+  color: #000000;
+  position: absolute;
+  border: 0px;
+  margin: 0; 
+  overflow:hidden;
+  touch-action: auto;
+  pointer-events:auto;
+  z-index: 4;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  left: 0px;
+  right: 0px;
+  top: 20px;
+}
+#errordiv {
+  background-color: transparent;
+  color: #000000;
+  position: absolute;
+  border: 0px;
+  margin: 0; 
+  overflow:hidden;
+  touch-action: auto;
+  pointer-events:auto;
+  z-index: 4;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+#errorframe {
+  background-color: transparent;
+  color: #000000;
+  position: absolute;
+  border: 0px;
+  margin: 0; 
+  overflow:hidden;
+  touch-action: auto;
+  pointer-events:auto;
+  z-index: 10;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  left: 0px;
+  right: 0px;
+  top: 20px;
+}
